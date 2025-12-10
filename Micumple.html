@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Invitación de Cumpleaños</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fuentes cursivas / elegantes -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #e5dcc7; /* beige suave */
+      font-family: "Playfair Display", serif;
+    }
+
+    .card {
+      background: #f7f1e4; /* beige claro */
+      border: 12px solid #1f2833;
+      padding: 40px 26px 60px;
+      max-width: 420px;
+      width: 90%;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+
+    .card::before {
+      /* marco interior vintage */
+      content: "";
+      position: absolute;
+      inset: 18px;
+      border: 2px solid rgba(0,0,0,0.2);
+      pointer-events: none;
+    }
+
+    h1 {
+      font-family: "Great Vibes", cursive;
+      font-size: 2.4rem;
+      margin-bottom: 12px;
+      color: #6e4b2c;
+    }
+
+    .texto {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #5c4425;
+      margin-bottom: 26px;
+    }
+
+    .separador {
+      margin: 20px auto 26px;
+      width: 80px;
+      height: 1px;
+      background: #c2a880;
+      position: relative;
+    }
+    .separador::before,
+    .separador::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      border: 1px solid #c2a880;
+      top: -4px;
+    }
+    .separador::before { left: -10px; }
+    .separador::after { right: -10px; }
+
+    a.boton {
+      display: inline-block;
+      margin-top: 6px;
+      padding: 10px 20px;
+      border-radius: 999px;
+      border: 1px solid #2c4a7a;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.98rem;
+      color: #ffffff;
+      background: #305fa3;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    a.boton:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .link-texto {
+      margin-top: 10px;
+      font-size: 0.88rem;
+      word-break: break-all;
+    }
+
+    .link-texto a {
+      color: #305fa3;
+      text-decoration: underline;
+    }
+
+    .sello {
+      position: absolute;
+      bottom: -22px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, #f6e0af, #b57a28);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Great Vibes", cursive;
+      color: #5c3a16;
+      font-size: 1.8rem;
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 30px 18px 55px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Gladys</h1>
+
+    <p class="texto">
+      Te invito a mi cumpleaños,<br>
+      el mismo se celebra el próximo</strong><br>12 de diciembre</strong><br>
+      a las <strong>21:00 horas</strong>.<br><br>
+      <em>Lugar a confirmar.</em>
+    </p>
+
+    <div class="separador"></div>
+
+    <p class="texto">
+      Para más detalles, por favor ingresa al siguiente enlace:
+    </p>
+
+    <!-- Botón clickeable -->
+    <a class="boton" href="https://chat.whatsapp.com/HQK2uxLjpSgLdBmFpoPORH" target="_blank" rel="noopener">
+      Unirme al grupo de WhatsApp
+    </a>
+
+    <!-- Link visible por si alguien lo copia -->
+    <p class="link-texto">
+      o copia y pega este link en tu navegador:<br>
+      <a href="https://chat.whatsapp.com/HQK2uxLjpSgLdBmFpoPORH" target="_blank" rel="noopener">
+        https://chat.whatsapp.com/HQK2uxLjpSgLdBmFpoPORH
+      </a>
+    </p>
+
+    <div class="sello">D</div>
+  </div>
+</body>
+</html>
